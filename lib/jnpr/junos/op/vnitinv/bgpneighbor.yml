@@ -1,0 +1,13 @@
+---
+BGPNeighborTable:
+  rpc: get-bgp-neighbor-information
+  item: bgp-peer
+  key: peer-address
+  view: BGPNeighborView
+
+BGPNeighborView:
+  fields:
+    neighbor: peer-address
+    state: peer-state
+    type: peer-type
+    flap_count: flap-count
